@@ -1,0 +1,20 @@
+let nicknames = ['di', 'boo', 'punkeye'];
+
+// for...of используется для перебора в цикле итерируемых объектов, например, массивов
+nicknames.size = 3;
+for (let nickname of nicknames) {
+    console.log(nickname);
+}
+// di
+// boo
+// punkeye
+
+// for...in используется для перебора в цикле всех доступных для перебора (enumerable) свойств объекта
+nicknames.size = 3;
+for (let nickname in nicknames) {
+    console.log(nickname);
+}
+// 0
+// 1
+// 2
+// size
